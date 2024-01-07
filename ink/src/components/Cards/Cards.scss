@@ -1,0 +1,51 @@
+.cards{
+    margin-bottom: 70px;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &-buttons{
+        display: flex;
+        gap: 32px;
+    }
+    &-button{
+        padding: 8px 18px;
+        background: #D4E8D9;
+        color: #2C2D35;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 20px;
+        border: 2px solid #D4E8D9;
+        &:hover {
+            background: #598D66;
+            color: #fff;
+          }
+          &:active {
+            background: #376B44;
+            color: #fff;
+          }
+          &:focus{
+            border: 2px solid #598D66;
+          }
+    }
+    &-title{
+        color: #2C2D35;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 110%;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+}
+.content{
+    display: none;
+}
+.show-content{
+    display: block;
+}

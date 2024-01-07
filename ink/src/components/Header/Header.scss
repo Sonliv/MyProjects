@@ -1,0 +1,46 @@
+
+
+.header{
+    background-color: #E1EDE6;
+    padding: 32px 0;
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-list{
+      display: flex;
+      gap: 60px;
+    }
+    &-item{
+      font-size: 20px;
+      &:hover{
+        color: #598D66;
+        fill: #598D66;
+      }
+      &:focus{
+        background: #D4E8D9;
+      }
+      &:active{
+        color: #376B44;
+      }
+    }
+
+    //cart   !focus потестить
+
+      .header-item a svg:hover path {
+        stroke: #598D66;
+      }
+      
+      .header-item a svg:focus path {
+        background: #D4E8D9;
+        stroke: #598D66;
+      }
+      
+      .header-item a svg:active path {
+        color: #376B44;
+        stroke: #598D66;
+      }
+      
+  }
+  
