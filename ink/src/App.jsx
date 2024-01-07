@@ -8,7 +8,7 @@ import Team from './components/Team/Team'
 import Footer from './components/footer/Footer'
  
 
-//git test
+//git config --global user.email "user@example.com"
 
 export default function App() {
 
