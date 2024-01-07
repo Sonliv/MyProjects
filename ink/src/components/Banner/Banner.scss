@@ -35,7 +35,32 @@
         color: #2C2D35;
         font-size: 20px;
         font-weight: 500;
-        padding: 20px 60px;
+        padding: 18px 58px;
         background: #EEDB6D;
+        border: 1px solid #EEDB6D;
+        &:hover{
+            background: #FAEB97;
+        }
+        &:active{
+            background: #D9B949;
+        }
+        &:focus{
+            border: 1px solid #A38314;
+            background: #FAEB97;
+        }
     }
 }
+
+
+@media (max-width: 690px){
+    .banner{
+        &-title{
+            & h3{
+                font-size: 30px;
+            }
+        }
+        &-text:nth-child(3) {
+            margin-bottom: 30px;
+        }
+    }
+  }

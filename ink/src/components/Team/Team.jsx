@@ -8,7 +8,7 @@ export default function Team(){
         <section className="team">
             <div className="container">
                 <div className="team-wrapper">
-                <img src={team1} alt="" />
+                <img className='team-first-img' src={team1} alt="" />
                 <div className="team-text">
                     <h4 className="team-title">Наша команда</h4>
                     <p className="team-desc">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>

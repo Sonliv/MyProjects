@@ -22,13 +22,13 @@
             background: #598D66;
             color: #fff;
           }
-          &:active {
-            background: #376B44;
-            color: #fff;
-          }
-          &:focus{
-            border: 2px solid #598D66;
-          }
+        //   &:active {
+        //     background: #376B44;
+        //     color: #fff;
+        //   }
+        //   &:focus{
+        //     border:  #598D66;
+        //   }
     }
     &-title{
         color: #2C2D35;
@@ -49,3 +49,14 @@
 .show-content{
     display: block;
 }
+
+@media (max-width: 690px){
+    .cards{
+        &-title{
+            font-size: 30px;
+        }
+        &-buttons{
+            gap: 17px;
+        }
+    }
+  }

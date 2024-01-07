@@ -44,3 +44,13 @@
       
   }
   
+  @media (max-width: 690px){
+    .container{
+      padding: 0 35px;
+  }
+    .header{
+      &-item{
+        font-size: 18px;
+      }
+    }
+  }

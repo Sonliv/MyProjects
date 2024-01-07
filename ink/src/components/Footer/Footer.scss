@@ -57,3 +57,33 @@
         line-height: 120%; /* 14.4px */
     }
 }
+
+.footer-show-690 {
+    display: none;
+}
+
+@media (max-width: 690px) {
+    .footer {
+        &-wrapper {
+            flex-wrap: wrap;
+        }
+        &-contacts {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-nav {
+            flex-direction: column;
+            width: 100%;
+            gap: 30px;
+        }
+        &-adaptive {
+            display: none;
+        }
+        &-show-690 {
+            display: block;
+        }
+        &-info{
+            gap: 46px;
+        }
+    }
+}

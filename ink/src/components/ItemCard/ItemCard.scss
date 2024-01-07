@@ -34,5 +34,28 @@
         padding: 21px 106px;
         text-align: center;
         border: 1px solid #598D66;
+        &:hover {
+            background: #598D66;
+            color: #fff;
+          }
+          &:active {
+            background: #376B44;
+            color: #fff;
+          }
+          &:focus{
+            border: 1px solid #598D66;
+          }
     }
 }
+
+@media (max-width: 690px){
+    .card{
+        &-item{
+            width: 290px;
+        }
+        &-button{
+            padding: 21px 0;
+            width: 100%;
+        }
+    }
+  }

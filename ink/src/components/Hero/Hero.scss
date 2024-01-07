@@ -29,5 +29,28 @@
             text-align: center;
             border: 1px solid #598D66;
             font-size: 20px;
+            &:hover{
+                color: #F4F6F5;
+                background-color: #598D66;
+            }
         }
 }
+
+
+@media (max-width: 690px){
+    .hero{
+        &-wrapper{
+            & img{
+                width: 330px;
+            }
+            gap: 0;
+        }
+        &-title{
+            font-size: 40px;
+            width: 330px;
+        }
+        &-description{
+            margin-bottom: 40px;
+        }
+    }
+  }

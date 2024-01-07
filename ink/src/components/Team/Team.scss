@@ -26,3 +26,21 @@
         gap: 30px;
     }
 }
+
+
+@media (max-width: 690px){
+    .team{
+        &-wrapper{
+            flex-direction: column;
+        }
+        &-first-img{
+            max-width: 413px;
+        }
+        &-text{
+            padding: 0;
+        }
+        &-title{
+            font-size: 30px;
+        }
+    }
+  }
