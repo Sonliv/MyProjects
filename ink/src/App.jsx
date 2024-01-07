@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer'
  
 
 //git config --global user.email "user@example.com"
+//commit feature
 
 export default function App() {
 
