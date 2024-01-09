@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+body{
+     font-family: 'Roboto', 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: #EDEFF5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+input, button{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Roboto', 'Rubik', sans-serif;
+}
+
+a, li{
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    color: #42454a;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.xl-container{
+    max-width: 1920px;
+    margin: 0 auto;
+}

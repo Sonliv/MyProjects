@@ -1,0 +1,50 @@
+.header{
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        //убрать на пикселях 700~
+        margin-bottom: -35px;
+    }
+    &-center{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+    //animated text
+
+    .animated-text {
+        position: relative; 
+        display: inline-block; // Чтобы линия обернула текст, если необходимо
+        overflow: hidden; // Если текст будет переполнять линию, это предотвратит это
+        padding-bottom: 4px;
+        font-family: 'Rubik';
+        letter-spacing: 3px;
+
+      
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform-origin: center;
+          width: 0;
+          height: 2px;
+          background-color: #42454a;
+          transition: width 0.8s ease, transform 0.3s ease;
+        }
+      
+        &:hover:before {
+          width: 50%;
+          transform: translateX(-50%) scaleX(2);
+        }
+      
+        &:hover:after {
+          width: 50%;
+          transform: translateX(-50%) scaleX(2);
+        }
+      }

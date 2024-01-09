@@ -1,0 +1,113 @@
+.slide{
+    position: relative;
+    &-info{
+        color: #fff;
+        position: absolute;
+        // top: 250px;
+        // left: 200px;
+        top:  20%;
+        left: 10%;
+    }
+    &-title{
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    &-cost{
+        font-size: 26px;
+        margin-bottom: 40px;
+        font-family: 'Rubik';
+        & span{
+            font-weight: bold;
+        }
+    }
+    &-desc{
+        font-size: 26px;
+        margin-bottom: 40px;
+        font-family: 'Rubik';
+        max-width: 70%;
+        line-height: 36px;
+    }
+    
+    //btn
+    &-btn {
+        padding: 10px 25px;
+        font-size: 22px;
+        letter-spacing: 1.5px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        background: transparent;
+        outline: none !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+      }
+      
+      &-btn {
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 1;
+        color: white;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            direction: rtl;
+            z-index: -1;
+            background: rgb(255, 255, 255);
+            transition: all 0.3s ease;
+          }
+          &:hover {
+            color: rgb(0, 0, 0);
+          }
+          &:hover:after {
+            left: auto;
+            right: 0;
+            width: 100%;
+          }
+          
+          &:active {
+            top: 2px;
+          }
+      }
+}
+
+
+
+
+// @media (max-width: 1399.98px) {}
+
+
+@media (max-width: 1199.98px) {
+  .slide{
+    &-desc{
+      font-size: 20px;
+      margin-bottom: 18px;
+      max-width: 70%;
+      line-height: 36px;
+    }
+    &-title{
+      font-size: 33px;
+      margin-bottom: 32px;
+    }
+    &-cost{
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    &-info{
+      top: 10%;
+    }
+  }
+}
+
+// Устройства Medium (планшеты, менее 992 пикселей)
+@media (max-width: 991.98px) { }
+
+// Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей)
+@media (max-width: 767.98px) {  }
+
+
+
+
