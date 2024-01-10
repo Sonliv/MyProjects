@@ -1,0 +1,17 @@
+.footer {
+  &-list {
+    & li {
+      & a {
+        color: #fff;
+        &:hover {
+          color: #cdaa51;
+        }
+      }
+      padding-bottom: 15px;
+      &:nth-child(1) {
+        padding-bottom: 25px;
+        font-size: 24px;
+      }
+    }
+  }
+}

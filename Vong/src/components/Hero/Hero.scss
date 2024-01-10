@@ -11,3 +11,14 @@
         padding: 40px;
     }
 }
+
+@media (max-width: 991.98px) {
+    .swiper{
+        &-button-prev{
+            padding: 20px;
+        }
+        &-button-next{
+            padding: 20px;
+        }
+    }
+}

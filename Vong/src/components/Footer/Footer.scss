@@ -1,0 +1,17 @@
+.footer{
+    background-color: #42454a;
+    padding: 20px 0;
+    &-logo{
+        color: #fff;
+        font-size: 26px;
+        padding-bottom: 20px;
+        &:hover{
+            color: #CDAA51;
+          }
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

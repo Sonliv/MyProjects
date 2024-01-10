@@ -1,6 +1,8 @@
 import SlideFirst from '../Base/SlideFirst/SlideFirst'
 import './Hero.scss'
-
+import Slide_1 from '/slide_1.png'
+import Slide_2 from '/slide_2.png'
+import Slide_3 from '/slide_3.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -27,9 +29,9 @@ export default function Hero(){
         }}
         pagination={{ clickable: true }}
       >
-        <SwiperSlide><SlideFirst/></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide><SlideFirst/></SwiperSlide>
+        <SwiperSlide><SlideFirst slideImg={Slide_1} slideTitle="Новая коллекция Весна-Лето" slideCost="2900" slideDesc="Осень - это время перемен, и наша новая осенняя коллекция готова вдохнуть свежий ветер в ваш гардероб. Осень - это время перемен, и наша новая осенняя коллекция готова вдохнуть свежий ветер в ваш гардероб."/></SwiperSlide>
+        <SwiperSlide><SlideFirst slideImg={Slide_2} slideTitle="Скидки на Бижутерию" slideCost="5200" slideDesc="Не упустите  возможность обновить свой гардероб украшениями, которые подчеркнут вашу индивидуальность Не упустите  возможность обновить свой гардероб украшениями, которые подчеркнут"/></SwiperSlide>
+        <SwiperSlide><SlideFirst slideImg={Slide_3} slideTitle="Костюм на заказ" slideCost="13620" slideDesc="Ателье предлагает вам создать идеальный костюм, который будет соответствовать вашим предпочтениям и сидеть как влитой. телье предлагает вам создать идеальный костюм, который будет соответствовать вашим"/></SwiperSlide>
       </Swiper>
         </section>
     )
