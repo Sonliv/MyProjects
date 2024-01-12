@@ -1,0 +1,25 @@
+.header{
+    background-color: #E1EDE6;
+    &Wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 33px 0;
+    }
+}
+
+
+
+
+.nav{
+    &List{
+        display: flex;
+        gap: 60px;
+    }
+    
+    &Item{
+        color: #2C2D35;
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
