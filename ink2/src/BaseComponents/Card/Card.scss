@@ -1,0 +1,44 @@
+.card{
+    padding: 20px 20px 30px;
+    background: #E1EDE6;
+    &-img{
+        margin-bottom: 20px;
+    }
+    &-autor{
+        color: #86928B;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &-title{
+        color: #2C2D35;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    &-subtitle{
+        color: #2C2D35;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    &-cost{
+        color: #598D66;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &-button .button{
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width:770px){
+    .card{
+        &-img{
+            max-width: 290px;
+        }
+    }
+}

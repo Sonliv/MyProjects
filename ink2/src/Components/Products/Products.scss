@@ -1,0 +1,50 @@
+.products{
+    margin-bottom: 70px;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &-title{
+        color: #2C2D35;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 44px */
+    }
+    &-button{
+        color: #2C2D35;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background: #D4E8D9;
+    }
+    &-nav{
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px 0;
+    flex-wrap: wrap;
+}
+
+.active{
+    color: #fff;
+    background: #376B44;
+}
+
+
+
+@media(max-width:768px){
+    .products{
+        &-title{
+            font-size: 30px;
+        }
+    }
+}
