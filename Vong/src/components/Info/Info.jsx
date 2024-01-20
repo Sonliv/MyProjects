@@ -2,7 +2,7 @@ import "./Info.scss";
 import InfoImg from "/info_wooman.png";
 export default function Info() {
   return (
-    <section className="info">
+    <section id="aboutID" className="info">
       <div className="container">
         <div className="info-wrapper">
           <div className="info-text">

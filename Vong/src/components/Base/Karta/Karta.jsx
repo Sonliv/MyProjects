@@ -1,7 +1,15 @@
+import Social from "../Social/Social"
+
 export default function Karta(){
     return(
-        <section className="karta">
+        <section id="contactID" className="karta">
             <div className="container">
+              <div className="karta-wrapper">
+                <div className="karta-social">
+                  <Social/>
+                  <span className="karta-number">+7961 921 59 22</span>
+                </div>
+              </div>
             <div style={{ position: "relative", overflow: "hidden" }}>
         <a
           href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"

@@ -8,8 +8,10 @@ export default function Header() {
   return (
     <header className="header xl-container">
       <div className="header-top">
-        {/* <Social /> */}
-        <a href="#">+7 961 832 41 12</a>
+        <div className="header-social">
+        <Social />
+        </div>
+        {/* <a href="#">+7 961 832 41 12</a> */}
         <a href="#">
           <BurgerButton />
         </a>

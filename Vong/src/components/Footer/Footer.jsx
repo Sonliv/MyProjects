@@ -9,7 +9,9 @@ export default function Footer() {
         <div className="footer-wrapper">
           <div className="footer-first">
             <h4><a className="footer-logo" href="#">The <span>Vong</span></a></h4>
+            <div className="footer-social-center">
             <Social/>
+            </div>
           </div>
           <FooterList
             footerUrl="Навигация"

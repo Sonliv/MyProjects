@@ -1,0 +1,45 @@
+.base{
+    &-btn {
+        padding: 10px 25px;
+        font-size: 22px;
+        letter-spacing: 1.5px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        background: transparent;
+        outline: none !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+      }
+      
+      &-btn {
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 1;
+        color: white;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            direction: rtl;
+            z-index: -1;
+            background: rgb(255, 255, 255);
+            transition: all 0.3s ease;
+          }
+          &:hover {
+            color: rgb(0, 0, 0);
+          }
+          &:hover:after {
+            left: auto;
+            right: 0;
+            width: 100%;
+          }
+          
+          &:active {
+            top: 2px;
+          }
+      }
+}

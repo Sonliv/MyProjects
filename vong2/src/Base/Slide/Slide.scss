@@ -1,0 +1,153 @@
+.slide{
+    position: relative;
+    &-info{
+        color: #fff;
+        position: absolute;
+        // top: 250px;
+        // left: 200px;
+        top:  20%;
+        left: 10%;
+    }
+    &-title{
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    &-cost{
+        font-size: 26px;
+        margin-bottom: 40px;
+        font-family: 'Rubik';
+        & span{
+            font-weight: bold;
+        }
+    }
+    &-desc{
+        font-size: 26px;
+        margin-bottom: 40px;
+        font-family: 'Rubik';
+        max-width: 70%;
+        line-height: 36px;
+    }
+}
+
+
+
+
+// @media (max-width: 1399.98px) {}
+
+
+@media (max-width: 1230px) {
+  .slide{
+    &-desc{
+      font-size: 20px;
+      margin-bottom: 18px;
+      max-width: 70%;
+      line-height: 36px;
+    }
+    &-title{
+      font-size: 33px;
+      margin-bottom: 32px;
+    }
+    &-cost{
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    &-info{
+      top: 10%;
+    }
+  }
+}
+
+// Устройства Medium (планшеты, менее 992 пикселей)
+@media (max-width: 991.98px) {
+  .slide{
+    &-desc {
+      font-size: 18px;
+      margin-bottom: 12px;
+      max-width: 76%;
+      line-height: 26px;
+  }
+  &-title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+  &-cost {
+    font-size: 25px;
+    margin-bottom: 13px;
+  }
+  }
+}
+// Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей)
+@media (max-width: 767.98px) {
+  .slide{
+    & img{
+      height: 286px;
+    }
+    &-desc {
+      font-size: 14px;
+      margin-bottom: 9px;
+      max-width: 80%;
+      line-height: 17px;
+    }
+    &-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  &-info {
+    top: 10%;
+    left: 15%;
+}
+  }
+}
+
+
+// Устройства Extra Small (смартфоны, менее 576 пикселей)
+@media (max-width: 575.98px) {
+  .header-top {
+    margin-bottom: 0;
+  }
+  .ul-horizontal{
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .slide{
+    & img{
+      height: auto;
+    }
+    &-desc{
+      display: none;
+    }
+    &-title {
+      font-size: 17px;
+      margin-bottom: 5px;
+  }
+    &-cost {
+      font-size: 18px;
+      margin-bottom: 8px;
+  }
+  &-btn{
+    padding: 5px 15px;
+  }
+  &-info {
+    left: 18%;
+  }
+    }
+}
+
+// Устройства Extra Extra Small (очень маленькие экраны, менее 360 пикселей)
+@media (max-width: 359.98px) {
+  .slide{
+    &-title{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    &-cost{
+      font-size: 15px;
+    }
+  }
+}
+
+
+
+

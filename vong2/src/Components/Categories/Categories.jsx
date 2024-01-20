@@ -1,4 +1,3 @@
-import Title from "../Base/Title/Title";
 import "./Categories.scss";
 
 import Categories_1 from "/categories_man.png";
@@ -21,7 +20,7 @@ function СategoriesCard(props){
 export default function Categories() {
   return (
     <section id="categoriesID" className="categories">
-      <Title title="Готовые решения" />
+      <h3 className="categories-title">Отреставрированная Одежда</h3>
       <div className="container">
         <div className="categories-wrapper">
         <СategoriesCard titleCard="Костюмы" imgCard={Categories_1} />

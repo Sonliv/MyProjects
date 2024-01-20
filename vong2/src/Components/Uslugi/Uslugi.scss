@@ -1,0 +1,48 @@
+.uslugu-button .base-btn{
+    // border: 1px solid #4a4a4a;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    &:after {
+        // background: #eca04f;
+        background: #d56a8e;
+      }
+}
+
+
+.uslugi{
+    margin-bottom: 60px;
+    border-top: #d3d1d1 1px solid;
+
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 0 0 0;
+    }
+    // &-img{
+    //     max-width: 50%;
+    //     max-height: 500px;
+    // }
+    &-text{
+        max-width: 500px;
+    }
+    &-title{
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        color: #4a4a4a;
+        border-bottom: 2px solid #d56a8e;
+        display: inline-block;
+        padding-bottom: 20px;
+        font-weight: 500;
+        & span{
+            color: #252525;
+            font-weight: 600;     
+        }
+    }
+    &-desc{
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
+}

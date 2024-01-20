@@ -15,6 +15,12 @@
         align-items: center;
     }
 }
+@media (max-width:1253px){
+    .footer-wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }
 
 @media (max-width:"810px"){
     .footer{
@@ -22,8 +28,29 @@
             flex-wrap: wrap;
             gap: 20px;
         }
+        &-first{
+            width: 100%;
+        }
+        h4{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &-social-center .social-list{
+            margin: 0 auto;
+        }
+    } 
+    
+}
+
+@media (max-width:605px){
+    .footer{
+        &-list{
+            width: 40%;
+            text-align: center;
+        }
     } 
 }
+
 
 @media (max-width:"410px"){
     .footer{
