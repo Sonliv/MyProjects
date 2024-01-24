@@ -1,0 +1,23 @@
+.map{
+    margin-bottom: 60px;
+    &-wrapper{
+        text-align: center;
+        max-width: 100%;
+    }
+    iframe{
+        border: none;
+    }
+    &-title{
+        text-align: center;
+        color: #838383;
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1285px){
+    .map-wrapper{
+        padding: 20px;
+    }
+}

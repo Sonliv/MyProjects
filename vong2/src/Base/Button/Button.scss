@@ -43,3 +43,10 @@
           }
       }
 }
+
+@media (max-width:375px){
+  .slide-btn-wrapper .base-btn{
+    font-size: 16px;
+    padding: 5px 20px;
+  }
+}

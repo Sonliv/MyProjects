@@ -3,8 +3,6 @@
 
 body{
      font-family: 'Roboto', 'Rubik', sans-serif;
-    padding: 0;
-    margin: 0;
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -19,6 +17,8 @@ h1, h2, h3, h4, h5, h6, p {
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 img{
     max-width: 100%;
@@ -40,16 +40,20 @@ a, li{
     color: #42454a;
 }
 
-ul {
-    padding-inline-start: 0;
-}
-
-
 .container{
   max-width: 1250px;
   margin: 0 auto;
 }
 
+.hero.xl-container {
+  margin: 0 auto;
+  max-width: 1920px;
+  margin-bottom: 40px;
+}
+
+.df{
+  display: flex;
+}
 
 
  //animated text

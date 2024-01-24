@@ -8,7 +8,7 @@ import Slide_3 from '/slide_3.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 
 
@@ -16,9 +16,9 @@ import 'swiper/css/navigation';
 
 export default function Hero(){
     return(
-     <section className="hero xl-container">
+     <section id='promotion-id' className="hero xl-container">
      <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay ]}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
@@ -26,6 +26,10 @@ export default function Hero(){
         navigation = {{
             nextEL: '.hero-swiper-button-next',
             prevEL: '.hero-swiper-button-prev',
+        }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
       >

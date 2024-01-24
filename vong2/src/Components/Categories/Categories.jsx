@@ -9,7 +9,7 @@ import Categories_4 from "/categories_tshirt.png";
 function СategoriesCard(props){
   return(
     <div class="categories-card">
-    <a href="#">
+    <a href="#Forma">
       <img src={props.imgCard} alt="" />
       <p>{props.titleCard}</p>
     </a>
@@ -19,7 +19,7 @@ function СategoriesCard(props){
 
 export default function Categories() {
   return (
-    <section id="categoriesID" className="categories">
+    <section id="categories-id" className="categories">
       <h3 className="categories-title">Отреставрированная Одежда</h3>
       <div className="container">
         <div className="categories-wrapper">
