@@ -8,9 +8,6 @@ export default function Slide(props){
                 <h3 className="slide-title">{props.slideTitle}</h3>
                 <p className="slide-cost">От <span>{props.slideCost}</span> рублей</p>
                 <p className="slide-desc">{props.slideDesc}</p>
-                    {/* <div className="slide-btn-wrapper">
-                <Button buttonText="Подробнее" />
-                </div> */}
                 <a href="#Forma" className="slide-btn-wrapper">
                 <Button buttonText="Подробнее" />
                 </a>

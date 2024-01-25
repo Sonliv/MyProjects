@@ -1,8 +1,8 @@
 import Slide from '../../Base/Slide/Slide'
 import './Hero.scss'
-import Slide_1 from '/slide_1.png'
-import Slide_2 from '/slide_2.png'
-import Slide_3 from '/slide_3.png'
+import Slide_1 from '/slide_1.webp'
+import Slide_2 from '/slide_2.webp'
+import Slide_3 from '/slide_3.webp'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

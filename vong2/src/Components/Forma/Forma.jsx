@@ -11,7 +11,7 @@ const Forma = () => {
                         <input type="tel" className="contact-user-pass" placeholder='+7 (999) 999-99-99' />
                         <textarea placeholder='Опишите вашу просьбу' className="contact-textarea" name="#" id="#"></ textarea>
                         <button className="contact-btn">Отправить</button>
-                        <p className="contact-politic">Нажимая кнопку "Отправить", я даю <span>согласие на обратку моих персональных данных</span></p>
+                        <p className="contact-politic">Нажимая кнопку "Отправить", я даю  <a target="_blank" href="https://example.com/"><span>согласие на обратку моих персональных данных</span> </a> </p>
                     </form>
                 </div>
             </div>

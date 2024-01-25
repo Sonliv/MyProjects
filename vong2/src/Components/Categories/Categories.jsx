@@ -1,9 +1,9 @@
 import "./Categories.scss";
 
-import Categories_1 from "/categories_man.png";
-import Categories_2 from "/categories_pants.png";
-import Categories_3 from "/categories_nike.png";
-import Categories_4 from "/categories_tshirt.png";
+import Categories_1 from "/categories_man.webp";
+import Categories_2 from "/categories_pants.webp";
+import Categories_3 from "/categories_nike.webp";
+import Categories_4 from "/categories_tshirt.webp";
 
 
 function СategoriesCard(props){

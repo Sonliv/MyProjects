@@ -1,4 +1,5 @@
 .header{
+    background-color: #ebeced;
     padding: 20px 10px;
     &-wrapper{
         display: flex;
@@ -38,7 +39,6 @@
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: #fff;
         padding: 20px 10px;
         border-bottom: 2px solid #c3c3c3;
 

@@ -1,7 +1,5 @@
-// BurgerBtn.jsx
-
 import React from 'react';
-import './BurgerBtn.scss';
+
 
 const BurgerBtn = ({ isOpen, setOpen }) => {
     return (
