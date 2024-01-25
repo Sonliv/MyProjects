@@ -45,8 +45,10 @@
     }
 }
 
-@media (max-width: 440px){
+@media (max-width: 425px){
     .footer-info .header-info{
         display: block;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }
