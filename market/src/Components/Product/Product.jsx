@@ -47,7 +47,7 @@ const Product = () => {
             <div className="container">
                 <div className="product-container">
                     <h3 className="product-title">Иконки</h3>
-                    <p className="product-desc">Улучшите свой дизайн с помощью готовых наборов с иконками</p>
+                    <p className="product-desc">Улучшите свой дизайн с помощью готовых наборов иконок</p>
                     <div className="product-wrapper">
                         <ProductItem/>
                         <ProductItem/>
