@@ -1,0 +1,22 @@
+.footer{
+    background-color: #F2F5F7;
+    padding: 40px 0;
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-logo-desc{
+        font-size: 15px;
+    }
+    &-logo .logo{
+        padding-bottom: 15px;
+    }
+    &-menu-title{
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    &-item{
+        margin-bottom: 10px;
+    }
+}

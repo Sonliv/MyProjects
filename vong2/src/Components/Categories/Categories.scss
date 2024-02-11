@@ -19,7 +19,6 @@
         display: inline-block;
         width: 320px;
         overflow: hidden;
-      
         & p {
           position: absolute;
           top: 50%;
@@ -42,15 +41,12 @@
           transition: transform 0.3s ease;
           max-height: 100%;
         }
-      
         &:hover p {
           opacity: 1;
         }
-      
         &:hover img {
           transform: scale(1.1);
         }
-      
         &::before {
           content: "";
           position: absolute;
@@ -62,19 +58,17 @@
           opacity: 0;
           transition: opacity 0.3s ease;
         }
-      
         &:hover::before {
           opacity: 1;
         }
       }
 }
-
 @media (max-width: 950px){
   .categories{
     margin-bottom: 30px;
   }
 }
-
+// Адаптация под устройства 705px
 @media (max-width:705px){
     .categories-card {
         & p {
@@ -82,13 +76,7 @@
         }
     }
 }
-
 @media (max-width:515px){
-    // .categories-card {
-    //     & p {
-    //         font-size: 15px;
-    //     }
-    // }
     .categories{
       &-card{
           & p {
@@ -102,6 +90,7 @@
       }
     }
 }
+// Адаптация под маленькие экраны
 @media (max-width:360px){
     .categories-card {
         & p {

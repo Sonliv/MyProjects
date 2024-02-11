@@ -19,7 +19,6 @@
         gap: 10px;
     }
 }
-
 .logo{
     max-width: 150px;
     font-size: 28px;
@@ -27,11 +26,10 @@
         font-weight: 600;
     }
 }
-
 .burger-btn{
     display: none;
 }
-
+// Создание адаптива под устройства 1024px
 @media (max-width: 1024px) {
     .header {
         position: fixed;
@@ -41,7 +39,6 @@
         z-index: 1000;
         padding: 20px 10px;
         border-bottom: 2px solid #c3c3c3;
-
         &-wrapper {
             display: flex;
             justify-content: space-between;
@@ -50,7 +47,6 @@
             font-family: 'Rubik';
             color: #42454a;
         }
-
         &-list {
             display: flex;
             flex-direction: column;
@@ -73,17 +69,13 @@
             transform: translateX(100%);
         }
     }
-
     .burger-btn {
         display: block;
     }
-
     .hero {
         padding-top: 100px;
     }
 }
-
-
 @media (max-width:654px){
     .header{
         &-info{
@@ -91,7 +83,7 @@
         }
     }
 }
-
+// Создание адаптива под мобильные устройства
 @media (max-width:560px){
     .header{
         .adres{
@@ -99,7 +91,6 @@
         }
     }
 }
-
 @media (max-width:425px){
     .header{
         &-info{

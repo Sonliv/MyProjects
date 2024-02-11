@@ -1,12 +1,12 @@
+// Подключение нужных файлов
 import React, { useState } from 'react';
 import './Header.scss';
 import BurgerBtn from '../../Base/BurgerBtn/BurgerBtn';
 import Logo from '../../Base/Logo/Logo';
 import Number from '../../Base/Number/Number';
-
+// Создание компонента Header
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
-
     return (
         <header id='header-id' className="header">
             <div className="container">
@@ -27,5 +27,4 @@ const Header = () => {
         </header>
     );
 }
-
 export default Header;

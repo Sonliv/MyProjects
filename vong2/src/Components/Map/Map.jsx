@@ -1,6 +1,7 @@
+// Подключение нужных файлов
 import React from 'react';
 import './Map.scss';
-
+// Интеграция карты с Яндекса
 const Map = () => {
   const mapHTML = `
     <div style="position:relative;overflow:hidden;">
@@ -19,7 +20,7 @@ const Map = () => {
       ></iframe>
     </div>
   `;
-
+  // Создание компонента с Картой
   return (
     <section id='Karta' className="map">
       <div className="container">
@@ -29,5 +30,4 @@ const Map = () => {
     </section>
   );
 };
-
 export default Map;

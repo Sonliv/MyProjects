@@ -1,11 +1,10 @@
+// Подключение нужных файлов
 import "./Categories.scss";
-
 import Categories_1 from "/categories_man.webp";
 import Categories_2 from "/categories_pants.webp";
 import Categories_3 from "/categories_nike.webp";
 import Categories_4 from "/categories_tshirt.webp";
-
-
+// Создание карточки
 function СategoriesCard(props){
   return(
     <div class="categories-card">
@@ -16,7 +15,7 @@ function СategoriesCard(props){
   </div>
   )
 }
-
+// Создание компонента
 export default function Categories() {
   return (
     <section id="categories-id" className="categories">

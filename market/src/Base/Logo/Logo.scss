@@ -1,0 +1,21 @@
+@import '../../reset.scss';
+// .logo-img{
+//     width: 50px;
+// }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    &:hover .logotype {
+        background-color: #464545;
+    }
+}
+.logotype{
+    color: #fff;
+    background-color: #262626;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 12px;
+}

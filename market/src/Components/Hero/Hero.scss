@@ -1,0 +1,60 @@
+@import '../../reset.scss';
+.hero{
+    margin-bottom: 70px;
+    margin-top: 120px;
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    &-text{
+        text-align: center;
+    }
+    &-title{
+        margin-bottom: 30px;
+        font-size: $title-fz;
+        line-height: 40px;
+        color: $title-color;
+    }
+    &-img{
+        width: 40%;
+    }
+}
+
+
+@media  (max-width: 1024px) {
+    .hero {
+        margin-bottom: 70px;
+        margin-top: 175px;
+    }
+}
+
+
+@media  (max-width: 768px) {
+    .hero-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+
+@media  (max-width: 768px) {
+    .hero {
+        margin-top: 240px;
+            &-img{
+                // display: none;
+                width: 80%;
+                margin: 0 auto;
+            }
+            &-wrapper{
+                flex-wrap: wrap;
+            }
+            .hero-text {
+                text-align: center;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+    }
+}
