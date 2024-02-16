@@ -199,3 +199,23 @@
         }   
     }
 }
+
+
+@media  (max-width: 425px) {
+    .header .cart-menu{
+        width: 100%;
+    }
+    .header .cart-item-img {
+        width: 25%;
+    }
+}
+
+
+
+@media  (max-width: 375px) {
+    .header{
+        &-btn{
+            min-width: 100px;
+        }
+    }
+}

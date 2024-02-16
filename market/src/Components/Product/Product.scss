@@ -36,3 +36,33 @@
         color: $title-color;
     }
 }
+
+
+
+@media (max-width: 920px) {
+
+    // стили
+    .product{
+        &-wrapper{
+            justify-content: flex-start;
+            gap: 30px 3%;
+        }
+        &-item{
+            width: 31%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    // стили
+    .product{
+        &-wrapper{
+            justify-content: space-between;
+            gap: 20px 10px;
+        }
+        &-item{
+            width: 40%;
+        }
+    }
+}
