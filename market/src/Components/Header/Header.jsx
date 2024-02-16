@@ -1,23 +1,46 @@
-import React, { useState, useRef } from 'react';
-
 import Logo from '../../Base/Logo/Logo';
 import Cart from '/cart.png';
 import Favorite from '/favorite.png';
 import User from '/user.png';
 import BottomArrow from '/bottom-arrow.svg';
-import Search from '/search.svg';
+import Search from '/search2.svg';
 import Close from '/close.svg';
 import ProuctImg from '/productImg.png'
-
+import DropDownIcons from '/drop_down_icon.png'
 import './header.scss';
+import React, { useState, useRef } from 'react';
+
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
     const menuRef = useRef(null);
+    const [openDropDown, setDropDown] = useState(false)
 
+    //cart
     const toggleMenu = () => {
         setOpen(!isOpen);
     };
+
+    //drop down
+
+    const toggleDropDown = () => {
+        setDropDown(!openDropDown);
+    }
+
+    //drop down
+    function DropDownList(){
+        return(
+            <div style= {{ display: openDropDown ? 'none' : 'block' }} className='header-drop-down-list'>
+                <ul className="header-drop-down">
+                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Иконки</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>PHP Скрипты</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Видео</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Шаблоны Eccomers</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Шаблоны WordPress</span></a></li>
+                </ul>
+            </div>
+        )
+    }
 
     function CartItem(){
         return(
@@ -40,9 +63,10 @@ const Header = () => {
                 <div className="header-wrapper">
                     <div className="header-nav">
                         <Logo />
-                        <button className="header-catalog-btn">
-                            Каталог <img src={BottomArrow} alt="" />
+                        <button onClick={toggleDropDown} className="header-catalog-btn">
+                            <span>Каталог</span> <img className='header-catalog-btn-img' src={BottomArrow} alt="" />
                         </button>
+                        <DropDownList/>
                     </div>
                     <form action="#" className="header-search">
                         <input placeholder="Искать товары" type="text" className="search" />
@@ -65,10 +89,11 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
+                {/* корзина */}
                 <div className="cart-menu" ref={menuRef} style={{ right: isOpen ? '0' : '-400px' }} >
                     <div className="cart-wrapper">
                         <div className="cart-top">
-                            <span className="cart-title">Корзина (1) </span>
+                            <span className="cart-title">Корзина (3) </span>
                             <img onClick={toggleMenu} src={Close} alt="" className="cart-close" />
                         </div>
                         <CartItem/>

@@ -41,6 +41,7 @@ import React, {useState, useRef} from 'react';
                 <img ref={arrowImgRef} className={isOpen ? 'footer-menu-arrow rotated' : 'footer-menu-arrow rotated-back'} src={ArrowDown} alt="" />
             </div>
             <ul className="footer-list" ref={listRef} style={{maxHeight: getHeight()}}  >
+            {/* <ul className="footer-list" ref={listRef} style={{height: isOpen ? '120px' : '0' }}  > */}
                 <li className="footer-item"><a href="#">О компании</a></li>
                 <li className="footer-item"><a href="#">О продукте</a></li>
                 <li className="footer-item"><a href="#">Контакты</a></li>
