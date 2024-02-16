@@ -8,6 +8,7 @@
     }
     &-logo-desc{
         font-size: 15px;
+        max-width: 140px;
     }
     &-logo .logo{
         padding-bottom: 15px;
@@ -15,8 +16,63 @@
     &-menu-title{
         margin-bottom: 20px;
         font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &-item{
         margin-bottom: 10px;
+    }
+    &-menu-arrow{
+        width: 25px;
+        display: none;
+        transform: rotate(180deg);
+    }
+}
+
+.rotated{
+    transform: rotate(360deg); 
+    transition: ease 0.3s ;
+}
+
+.rotated-back {
+    transform: rotate(180deg); 
+    transition: ease 0.3s;
+}
+
+
+@media (max-width: 920px) {
+
+    // стили
+    .footer{
+        padding: 20px 0 0 0;
+        &-wrapper{
+            gap: 20px;
+        }
+        &-logo{
+            border-bottom: 2px solid #464545;
+            padding-bottom: 20px;
+            width: 100%;
+        }
+        &-logo.logo{
+            max-width: auto;
+        }
+        &-logo-desc{
+            max-width: none;
+        }
+        &-menu-arrow{
+            width: 25px;
+            display: block;
+        }
+
+        //accordion
+        &-list{
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        &-menu{
+            width: 100%;
+             // position: relative;
+        }
     }
 }

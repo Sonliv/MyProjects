@@ -34,6 +34,10 @@ input, button{
     font-family: 'Roboto', 'Mulish', serif;
 }
 
+button{
+    cursor: pointer;
+}
+
 a, li{
     color: inherit;
     text-decoration: none;

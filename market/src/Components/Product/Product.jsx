@@ -3,11 +3,11 @@ import ProuctImg from '/productImg.png'
 
 function  ProductItem(){
     return(
-    <div className="product-item">
-        <img className='product-img' src={ProuctImg} alt="" />
-        <p className="product-item-title">Универсальные иконки 1000+</p>
-        <p className="product-item-cost">1700 ₽</p>
-    </div>
+        <div className="product-item">
+            <img className='product-img' src={ProuctImg} alt="" />
+            <p className="product-item-title">Универсальные иконки 1000+</p>
+            <p className="product-item-cost">1700 ₽</p>
+        </div>
     )
 }
 const Product = () => {
