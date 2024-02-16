@@ -10,6 +10,7 @@ function FooterItem() {
                 <li className="footer-item"><a href="#">О компании</a></li>
                 <li className="footer-item"><a href="#">О компании</a></li>
                 <li className="footer-item"><a href="#">О компании</a></li>
+                <li className="footer-item"><a href="#">О компании</a></li>
             </ul>
          </nav>      
     )
