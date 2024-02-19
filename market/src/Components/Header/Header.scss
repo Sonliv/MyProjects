@@ -76,13 +76,16 @@
         transition: height 0.9s ease;
         background-color: #ffffff;
         box-shadow: 0 0 0 4px #08090a14;
-        padding: 20px;
     }
     &-drop-down-item{
-        padding-bottom: 20px;
+        padding-left: 10px;
+        &:hover{
+            background-color: #f1f0f0;
+        }
         & a{
             display: flex;
             align-items: center;
+            padding: 10px 0;
             gap: 5px;
         }
         & img{
@@ -109,7 +112,7 @@
         &-menu {
             position: absolute;
             top: 0;
-            right: -400px; 
+            right: -460px;
             width: 400px;
             height: 100vh;
             // background-color: #edecec;
@@ -189,6 +192,21 @@
         }
     }
 
+        @media(max-width: 1300px){
+            .header{
+                &-search {
+                    max-width: 500px; 
+            }
+        }
+    }   
+
+    @media(max-width: 1198px){
+        .header{
+            &-search {
+                max-width: 330px; 
+        }
+    }
+    }
 
 
     @media (max-width: 600px) {
@@ -249,3 +267,4 @@
         }
     }
 }
+

@@ -14,6 +14,7 @@ import React, { useState, useRef } from 'react';
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
     const menuRef = useRef(null);
+    const catalogRef = useRef(null);
     const [openDropDown, setDropDown] = useState(false)
 
     //cart
@@ -30,7 +31,7 @@ const Header = () => {
     //drop down
     function DropDownList(){
         return(
-            <div style= {{ display: openDropDown ? 'none' : 'block' }} className='header-drop-down-list'>
+            <div style= {{ display: openDropDown ? 'block' : 'none' }} className='header-drop-down-list'>
                 <ul className="header-drop-down">
                     <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Иконки</span></a></li>
                     <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>PHP Скрипты</span></a></li>
@@ -64,7 +65,7 @@ const Header = () => {
                     <div className="header-nav">
                         <Logo />
                         <button onClick={toggleDropDown} className="header-catalog-btn">
-                            <span>Каталог</span> <img className='header-catalog-btn-img' src={BottomArrow} alt="" />
+                            <span>Каталог</span> <img ref={catalogRef}  className={openDropDown ? 'header-catalog-btn-img' : ''} src={BottomArrow} alt="" />
                         </button>
                         <DropDownList/>
                     </div>
