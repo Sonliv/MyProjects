@@ -1,0 +1,28 @@
+@import '../../reset.scss';
+
+
+.hero{
+    margin-top: 170px;
+    margin-bottom: 70px;
+
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-text{
+        width: 50%;
+
+        &-title{
+            font-size: $fz-big;
+            margin-bottom: 60px;
+        }
+        &-desc{
+            font-size: $fz-medium;
+        }
+    }
+
+    &-img{
+        width: 45%;
+    }
+}

@@ -7,7 +7,7 @@ import React, {useState, useRef} from 'react';
 
     //accordion
 
-    function FooterItem() {
+    function FooterItem(props) {
 
         // ref для arrow
         const arrowImgRef = useRef(null);
@@ -37,15 +37,15 @@ import React, {useState, useRef} from 'react';
     return(
         <nav className="footer-menu">
             <div className="footer-menu-title" onClick={toggleAccordion} >
-                <span>Маркетплейс</span>
+                <span>{props.FooterTitle}</span>
                 <img ref={arrowImgRef} className={isOpen ? 'footer-menu-arrow rotated' : 'footer-menu-arrow rotated-back'} src={ArrowDown} alt="" />
             </div>
             <ul className="footer-list" ref={listRef} style={{maxHeight: getHeight()}}  >
             {/* <ul className="footer-list" ref={listRef} style={{height: isOpen ? '120px' : '0' }}  > */}
-                <li className="footer-item"><a href="#">О компании</a></li>
-                <li className="footer-item"><a href="#">О продукте</a></li>
-                <li className="footer-item"><a href="#">Контакты</a></li>
-                <li className="footer-item"><a href="#">Помощь</a></li>
+                <li className="footer-item"><a href="#">{props.First}</a></li>
+                <li className="footer-item"><a href="#">{props.Second}</a></li>
+                <li className="footer-item"><a href="#">{props.Third}</a></li>
+                <li className="footer-item"><a href="#">{props.Fourth}</a></li>
             </ul>
          </nav>      
     )
@@ -61,10 +61,27 @@ const Footer = () => {
                      <Logo/>
                      <p className='footer-logo-desc'>Маркетплейс цифровых  товаров.</p>
                     </div>
-                    <FooterItem/>
-                    <FooterItem/>
-                    <FooterItem/>
-                    <FooterItem/>
+                    <FooterItem 
+                    FooterTitle="Маркетплейс" 
+                    First="О нас" 
+                    Second="Контакты" 
+                    Third="Помощь" 
+                    Fourth ="Главная"
+                    />
+                     <FooterItem 
+                    FooterTitle="Категории" 
+                    First="Иконки" 
+                    Second="UI наборы" 
+                    Third="Видео" 
+                    Fourth ="WordPress Темы"
+                    />
+                     <FooterItem 
+                    FooterTitle="Покупателю" 
+                    First="Оплата" 
+                    Second="Доставка" 
+                    Third="Помощь покупателю" 
+                    Fourth ="Возврат"
+                    />
                 </div>
             </div>
         </footer>

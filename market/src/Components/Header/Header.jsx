@@ -5,11 +5,13 @@ import User from '/user.png';
 import BottomArrow from '/bottom-arrow.svg';
 import Search from '/search2.svg';
 import Close from '/close.svg';
-import ProuctImg from '/productImg.png'
+import ProductImg from '/product_2.jpg'
 import DropDownIcons from '/drop_down_icon.png'
 import './header.scss';
 import React, { useState, useRef } from 'react';
-
+import caregoryImg from '/images.png'
+import categoryUi from '/uiKit.png'
+import categortWordPress from '/wordpress.png'
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
@@ -34,10 +36,9 @@ const Header = () => {
             <div style= {{ display: openDropDown ? 'block' : 'none' }} className='header-drop-down-list'>
                 <ul className="header-drop-down">
                     <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Иконки</span></a></li>
-                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>PHP Скрипты</span></a></li>
-                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Видео</span></a></li>
-                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Шаблоны Eccomers</span></a></li>
-                    <li className="header-drop-down-item"><a href="#"><img src={DropDownIcons} alt="" />  <span>Шаблоны WordPress</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={categoryUi} alt="" />  <span>UI Наборы</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={caregoryImg} alt="" />  <span>Изображения</span></a></li>
+                    <li className="header-drop-down-item"><a href="#"><img src={categortWordPress} alt="" />  <span>Шаблоны WordPress</span></a></li>
                 </ul>
             </div>
         )
@@ -46,7 +47,7 @@ const Header = () => {
     function CartItem(){
         return(
             <div className="cart-item">
-            <img src={ProuctImg} alt="" className="cart-item-img" />
+            <img src={ProductImg} alt="" className="cart-item-img" />
             <div className="cart-item-info">
                 <span className="cart-item-title"><a href="#">Универсальные иконки 1000+</a></span>
                 <span className="cart-item-category"><a href="#">Иконки</a></span>
@@ -86,12 +87,12 @@ const Header = () => {
                         </button>
                         <button className="header-btn">
                             <img src={User} alt="" />
-                            <span>Дмитрий</span>
+                            <span>Имя</span>
                         </button>
                     </div>
                 </div>
                 {/* корзина */}
-                <div className="cart-menu" ref={menuRef} style={{ right: isOpen ? '0' : '-400px' }} >
+                <div className="cart-menu" ref={menuRef} style={{ right: isOpen ? '0' : '-475px' }} >
                     <div className="cart-wrapper">
                         <div className="cart-top">
                             <span className="cart-title">Корзина (3) </span>

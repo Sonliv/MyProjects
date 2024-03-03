@@ -1,5 +1,5 @@
 import './Hero.scss'
-import HeroBg from '/hero_bg.webp'
+import HeroBg from '/hero_bg.png'
 
 const Hero = () => {
     return (
@@ -7,8 +7,8 @@ const Hero = () => {
             <div className="container">
                 <div className="hero-wrapper">
                     <div className="hero-text">
-                        <h2 className="hero-title">Профессиональные темы WordPress и шаблоны сайтов для любого проекта</h2>
-                        <p className="hero-desc">Откройте для себя тысячи простых в настройке тем, шаблонов и продуктов CMS, созданных разработчиками мирового класса. Откройте для себя тысячи простых в настройке тем, шаблонов и продуктов CMS, созданных разработчиками мирового класса.</p>
+                        <h2 className="hero-title">Профессиональные шаблоны сайтов и решения для любого проекта</h2>
+                        <p className="hero-desc">Откройте для себя тысячи простых в настройке тем, шаблонов и продуктов CMS. Ищете вдохновение для вашего проекта? UI наборы, представленные на нашем сайте, помогут вам создать неповторимый дизайн и выделиться из толпы.</p>
                     </div>
                     <img className='hero-img' src={HeroBg} alt="" />
                 </div>

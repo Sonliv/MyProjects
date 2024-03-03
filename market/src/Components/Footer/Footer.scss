@@ -1,18 +1,23 @@
 .footer{
-    background-color: #F2F5F7;
+    // background-color: #F2F5F7;
+    background-color: #fff;
     padding: 40px 0 80px 0;
+
     &-wrapper{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     &-logo-desc{
         font-size: 15px;
         max-width: 140px;
     }
+
     &-logo .logo{
         padding-bottom: 15px;
     }
+
     &-menu-title{
         margin-bottom: 20px;
         font-weight: 500;
@@ -20,23 +25,24 @@
         align-items: center;
         justify-content: space-between;
     }
+
     &-item{
         margin-bottom: 10px;
     }
+
     &-menu-arrow{
         width: 25px;
         display: none;
-        transform: rotate(180deg);
     }
 }
 
 .rotated{
-    transform: rotate(360deg); 
+    transform: rotate(180deg); 
     transition: ease 0.3s ;
 }
 
 .rotated-back {
-    transform: rotate(180deg); 
+    transform: rotate(360deg); 
     transition: ease 0.3s;
 }
 
@@ -46,20 +52,26 @@
     // стили
     .footer{
         padding: 20px 0 0 0;
+
+
         &-wrapper{
             gap: 20px;
         }
+
         &-logo{
             border-bottom: 2px solid #464545;
             padding-bottom: 20px;
             width: 100%;
         }
+
         &-logo.logo{
             max-width: auto;
         }
+
         &-logo-desc{
             max-width: none;
         }
+        
         &-menu-arrow{
             width: 25px;
             display: block;
@@ -70,6 +82,7 @@
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
+        
         &-menu{
             width: 100%;
         }
