@@ -1,0 +1,65 @@
+@import '../../reset.scss';
+
+
+.product{
+
+    margin-bottom: 70px;
+
+
+    &-nav{
+        &-title{
+            font-size: $fz-big;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &-item{
+        width: 15%;
+        cursor: pointer;
+
+        &-img{
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: $border;
+            //убрать
+            max-height: 192px;
+
+            &-wrapper{
+                text-align: center;
+            }
+        }
+        &-title{
+            margin-bottom: 10px;
+
+        }
+        &-desc{
+             margin-bottom: 10px;
+        }
+
+
+        &-buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-btn{
+            background-color: $color-blue;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: $border;
+            width: 80%;
+
+            &:hover{
+                background-color: $color-blue-hover;
+            }
+        }
+    }
+
+};
