@@ -24,42 +24,65 @@
         width: 15%;
         cursor: pointer;
 
-        &-img{
-            margin-bottom: 10px;
+        &-img {
             text-align: center;
             border-radius: $border;
-            //убрать
+            // Убрать
             max-height: 192px;
-
-            &-wrapper{
+            // Новые стили
+            height: 192px; // Фиксированная высота для равномерного отображения
+            overflow: hidden; // Скрытие изображений, выходящих за пределы обертки
+        
+            &-wrapper {
                 text-align: center;
+                display: flex; // Добавить flex для центрирования по вертикали
+                align-items: center; // Центрирование по вертикали
+                justify-content: center; // Центрирование по горизонтали
+                margin-bottom: 10px;
+                background-color: #f4f4f4; // Цвет фона для изображения товара
+                padding: 2px;
+                border-radius: $border;
             }
         }
+        
         &-title{
-            margin-bottom: 10px;
-
+            margin-bottom: 5px;
+            display: -webkit-box; /* Устанавливаем блочный контейнер, который может быть ограничен по высоте */
+            -webkit-line-clamp: 2; /* Ограничиваем текст до двух строк */
+            -webkit-box-orient: vertical; /* Ориентируем текст вертикально */
+            overflow: hidden; /* Скрываем содержимое, выходящее за пределы контейнера */
         }
         &-desc{
              margin-bottom: 10px;
         }
 
-
-        &-buttons{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        &-cost{
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: $fz-medium;
         }
-        &-btn{
+
+
+        // &-buttons{
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        // }
+
+
+        &-btn {
             background-color: $color-blue;
             color: #fff;
             padding: 10px 20px;
             border-radius: $border;
-            width: 80%;
-
-            &:hover{
+            width: 100%;
+            text-align: center; // Центрирование текста в кнопке
+        
+            &:hover {
                 background-color: $color-blue-hover;
             }
         }
+        
     }
 
 };

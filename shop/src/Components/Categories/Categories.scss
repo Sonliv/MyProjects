@@ -12,18 +12,20 @@
 
     &-item {
         background-color: rgb(245, 244, 244);
-        width: 23%;
+        // width: 23%;
+        width: 100%;
         padding: 20px 15px 10px 20px;
         position: relative;
         border-radius: $border;
         cursor: pointer;
+
 
         &-title{
             font-size: $fz-semi-big;
             margin-bottom: 10px;
         }
         &-desc{
-            max-width: 70%;
+            max-width: 80%;
         }
     }
 

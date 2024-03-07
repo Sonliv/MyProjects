@@ -25,9 +25,14 @@
     }
     &-catalog{
         background-color: $color-black;
+
         color: #fff;
         border-radius: $border;
         padding: 10px 20px;
+
+        &:hover{
+            background-color: $color-black-hover;
+        }
     }
 
     //
@@ -117,8 +122,10 @@
 
         &-img{
             width: 30%;
-            width: 108px;
-            height: 108px;
+            height: 106px;
+            object-fit: contain;
+            // width: 108px;
+
         }
         &-text{
             width: 40%;
@@ -154,4 +161,48 @@
             background-color: $color-blue-hover;
         }
     }
+}
+
+
+
+
+
+@media (max-width:1440px){
+
+    .header{
+        &-logo-wrapper {
+            gap: 75px;
+        }
+        &-wrapper {
+            gap: 16px;
+        }
+    }
+
+}
+
+
+
+@media (max-width:1325px){
+
+    .header{
+        &-wrapper {
+            padding: 0 10px;
+        }
+    }
+
+}
+
+
+@media (max-width:930px){
+
+    .header{
+        &-wrapper {
+            flex-direction: column;
+        }
+        &-logo-wrapper {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
 }

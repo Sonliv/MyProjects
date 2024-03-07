@@ -5,4 +5,8 @@
     align-items: center;
     gap: 10px;
     font-size: $fz-medium;
+    
+    & span{
+        max-width: 70px;
+    }
 }

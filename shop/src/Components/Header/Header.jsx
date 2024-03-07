@@ -11,6 +11,8 @@ import game from '/spider.jpg'
 import book from '/book.webp'
 import yaPlus from '/yaPlus.jpg'
 
+
+
 function CartItem(props){
     return(
         <div className="cart-item">
@@ -45,22 +47,22 @@ const Header = () => {
                         <button className="header-catalog">Каталог</button>
                     </div>
                     <form className='header-search' action="#">
-                        <input className='header-search-input' placeholder='Яндекс +' type="text" />
+                        <input className='header-search-input' placeholder='Яндекс плюс' type="text" />
                         <button className="header-search-button"><img src={searchImg} alt="" /></button>
                     </form>
                     <div className="header-buttons">
-                        <a href="#" className="header-buttons-item">
+                        <button className="header-buttons-item">
                             <img src={favoriteImg} alt="" />
                             <span>Избранное</span>
-                        </a>
-                        <a onClick={toggleMenu} href="#" className="header-buttons-item">
+                        </button>
+                        <button onClick={toggleMenu} className="header-buttons-item">
                             <img src={cartImg} alt="" />
                             <span>Корзина</span>
-                        </a>
-                        <a href="#" className="header-buttons-item">
+                        </button>
+                        <button className="header-buttons-item">
                             <img src={userImg} alt="" />
                             <span>Имя</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div className="cart" ref={menuRef} style={{ right: isOpen ? '0' : '-475px' }}>

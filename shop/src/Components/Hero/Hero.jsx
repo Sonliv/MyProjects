@@ -1,22 +1,44 @@
 import './Hero.scss'
-import test from '/test.png'
+import banner from '/banner.png'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay} from 'swiper/modules';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const Hero = () => {
     return (
         <section className="hero">
             <div className="container">
-                <div className="hero-wrapper">
-                    <div className="hero-text">
-                        <h2 className="hero-text-title">Маркетплейс цифровых товаров</h2>
-                        <p className="hero-text-desc">Виртуальные товары с моментальной доставкой Виртуальные товары с моментальной доставкой Виртуальные товары с моментальной доставкой</p>
-                    </div>
-                    <div className="hero-img">
-                        <img src={test} alt="" />
-                    </div>
-                </div>
+                <Swiper className='banner-swiper'
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    loop={true}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    navigation={true} modules={[Navigation, Autoplay]}
+                    pagination={{
+                        clickable: true,
+                      }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}
+                    >
+                    <SwiperSlide><div className="hero-banner-wrapper"><img className='hero-banner' src={banner} alt="" /></div></SwiperSlide>
+                    <SwiperSlide><img className='hero-banner' src={banner} alt="" /></SwiperSlide>
+                    <SwiperSlide><img className='hero-banner' src={banner} alt="" /></SwiperSlide>
+                 </Swiper>
             </div>
         </section>
     );
 }
  
 export default Hero;
+
+
+
