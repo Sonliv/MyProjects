@@ -42,4 +42,14 @@
     .hero{
         margin-top: 225px;
     }
+    .hero .banner-swiper .swiper-button-prev:after, .hero .banner-swiper .swiper-button-next:after {
+        display: none;
+    }
+}
+
+
+@media(max-width: 500px){
+    .hero{
+        display: none;
+    }
 }

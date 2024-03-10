@@ -7,9 +7,27 @@
 
 
     &-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        &-buttons{
+            display: flex;
+            gap: 20px;
+        }
+
+        & img{
+            width: 50px;
+            border-radius: $border;
+            padding: 10px;
+            background-color: $color-blue;
+        }
+
+
+
         &-title{
             font-size: $fz-big;
-            margin-bottom: 30px;
         }
     }
 
@@ -21,8 +39,14 @@
     }
 
     &-item{
-        width: 15%;
+        // width: 15%;
+        width: 100%;
         cursor: pointer;
+        height: 372px;
+        //.
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &-img {
             text-align: center;

@@ -38,8 +38,8 @@ const Categories = () => {
                     <CategoryCard title="Что Послушать?" desc="Топ подборка от наших слушателей аудиокниг" categoryImg={listen} />
                 </div> */}
                 <Swiper className='categories-swiper'
-                    spaceBetween={10}
-                    slidesPerView={3.5}
+                    spaceBetween={20}
+                    slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     pagination={{
@@ -49,13 +49,49 @@ const Categories = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                       }}
+                      breakpoints={{
+                        350: {
+                            slidesPerView: 1,
+                          },
+                          400: {
+                            slidesPerView: 1.3,
+                          },
+                          450: {
+                            slidesPerView: 1.5,
+                          },
+                          500: {
+                            slidesPerView: 1.7,
+                          },
+                          550: {
+                            slidesPerView: 1.9,
+                          },
+                          670: {
+                            slidesPerView: 2.2,
+                          },
+                          750: {
+                            slidesPerView: 2.5,
+                          },
+                          900: {
+                            slidesPerView: 2.7,
+                          },
+                          960: {
+                            slidesPerView: 3.3,
+                          },
+                          1060: {
+                            slidesPerView: 3.5,
+                          },
+                          1160: {
+                            slidesPerView: 3.5,
+                          },
+                          1230: {
+                            slidesPerView: 4,
+                          },
+                      }}
                     >
-                        <div className="categories-wrapper">
-                    <SwiperSlide><CategoryCard title="Что посмотреть?" desc="Лучшие подписки по выгодным ценам" categoryImg={watch} /></SwiperSlide>
-                    <SwiperSlide><CategoryCard title="Во что поиграть?" desc="Ключи, коды активации для ваших игр" categoryImg={play} /></SwiperSlide>
-                    <SwiperSlide><CategoryCard title="Что почитать?" desc="Электронные книги, которые любят наши читатели" categoryImg={read} /></SwiperSlide>
-                    <SwiperSlide><CategoryCard title="Что Послушать?" desc="Топ подборка от наших слушателей аудиокниг" categoryImg={listen} /></SwiperSlide>
-                        </div>
+                    <SwiperSlide  className='categories-slide'><CategoryCard title="Что посмотреть?" desc="Лучшие подписки по выгодным ценам" categoryImg={watch} /></SwiperSlide>
+                    <SwiperSlide  className='categories-slide'><CategoryCard title="Во что поиграть?" desc="Ключи, коды активации для ваших игр" categoryImg={play} /></SwiperSlide>
+                    <SwiperSlide  className='categories-slide'><CategoryCard title="Что почитать?" desc="Электронные книги, которые любят наши читатели" categoryImg={read} /></SwiperSlide>
+                    <SwiperSlide  className='categories-slide'><CategoryCard title="Что Послушать?" desc="Топ подборка от наших слушателей аудиокниг" categoryImg={listen} /></SwiperSlide>
                  </Swiper>
             </div>
         </section>
