@@ -39,7 +39,7 @@ const Categories = () => {
                 </div> */}
                 <Swiper className='categories-swiper'
                     spaceBetween={20}
-                    slidesPerView={1}
+                    slidesPerView={1.16}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     pagination={{
@@ -51,7 +51,7 @@ const Categories = () => {
                       }}
                       breakpoints={{
                         350: {
-                            slidesPerView: 1,
+                            slidesPerView: 1.16,
                           },
                           400: {
                             slidesPerView: 1.3,

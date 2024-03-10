@@ -4,7 +4,7 @@ import cartImg from '/cart.svg'
 import userImg from '/user.svg'
 import favoriteImg from '/favorite.svg'
 import './Header.scss';
-import React, {useState, useRef} from 'react';
+// import React, {useState, useRef} from 'react';
 import close from '/close.png'
 //cart
 import game from '/spider.jpg'
@@ -13,29 +13,29 @@ import yaPlus from '/yaPlus.jpg'
 
 
 
-function CartItem(props){
-    return(
-        <div className="cart-item">
-        <img src={props.cartItemImg} alt="" className="cart-item-img" />
-        <div className="cart-item-text">
-            <p className="cart-item-title">{props.title}</p>
-            <button className="cart-item-category">{props.category}</button>
-            <button className="cart-item-btn">Убрать</button>
-        </div>
-        <span className="cart-item-cost">5000 &#8381;</span>
-    </div>
-    )
-}
+// function CartItem(props){
+//     return(
+//         <div className="cart-item">
+//         <img src={props.cartItemImg} alt="" className="cart-item-img" />
+//         <div className="cart-item-text">
+//             <p className="cart-item-title">{props.title}</p>
+//             <button className="cart-item-category">{props.category}</button>
+//             <button className="cart-item-btn">Убрать</button>
+//         </div>
+//         <span className="cart-item-cost">5000 &#8381;</span>
+//     </div>
+//     )
+// }
 
 
 const Header = () => {
-    const [isOpen, setOpen] = useState(false);
-    const menuRef = useRef(null);
+    // const [isOpen, setOpen] = useState(false);
+    // const menuRef = useRef(null);
 
-     //cart
-    const toggleMenu = () => {
-    setOpen(!isOpen);
-    };
+    //  //cart
+    // const toggleMenu = () => {
+    // setOpen(!isOpen);
+    // };
 
 
     return (
@@ -55,7 +55,8 @@ const Header = () => {
                             <img src={favoriteImg} alt="" />
                             <span>Избранное</span>
                         </button>
-                        <button onClick={toggleMenu} className="header-buttons-item">
+                        <button  className="header-buttons-item">
+                        {/* onClick={toggleMenu} */}
                             <img src={cartImg} alt="" />
                             <span>Корзина</span>
                         </button>
@@ -65,7 +66,7 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <div className="cart" ref={menuRef} style={{ right: isOpen ? '0' : '-475px' }}>
+                {/* <div className="cart" ref={menuRef} style={{ right: isOpen ? '0' : '-475px' }}>
                     <div className="cart-wrapper">
                         <div className="cart-wrapper-row">
                             <span>Корзина (3)</span>
@@ -76,7 +77,7 @@ const Header = () => {
                         <CartItem cartItemImg={yaPlus} title="Яндекс+ на 12 месяцев" category="Фильмы"/>
                         <button className="cart-total">Оплатить 8240 &#8381;</button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </header>
     );
