@@ -24,33 +24,32 @@ function ProductItem(props){
             <h3 className="product-item-title">{props.cardTitle}</h3>
             <p className="product-item-desc">{props.cardDesc}</p>
             <p className="product-item-cost">{props.cardCost}</p>
-            {/* <div className="product-item-buttons">
-                <button className="product-item-btn">Купить</button>
-                <button className="product-item-favorite"><img src={favorite} alt="" /> </button>
-            </div> */}
             <button className="product-item-btn">В корзину</button>
         </div>
     );
 }
 
-// function ProductNavButtons(){
-//     return(
-//         <div className='product-nav-buttons' >
-//             <button
-//                 className="button-prev product-nav-buttons-left"
-//                 onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
-//                 >
-//                 <img src={leftArrow} alt="" />
-//             </button>
-//             <button
-//                 className="button-next product-nav-buttons-right"
-//                 onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
-//                 >
-//                 <img src={rightArrow} alt="" />
-//             </button>
-//      </div>
-//     )
-// }
+
+
+function ProductNavButtons(props) {
+  return (
+      <div className='product-nav-buttons'>
+          <button
+              className={`${props.buttonClassLeft} product-nav-buttons-left`}
+              onClick={() => props.swiperInstance && props.swiperInstance.slidePrev()}
+          >
+              <img src={leftArrow} alt="" />
+          </button>
+          <button
+              className={`${props.buttonClassRight} product-nav-buttons-right`}
+              onClick={() => props.swiperInstance && props.swiperInstance.slideNext()}
+          >
+              <img src={rightArrow} alt="" />
+          </button>
+      </div>
+  );
+}
+
 
 
 const Product = () => {
@@ -60,20 +59,7 @@ const Product = () => {
             <div className="container">
                  <div className="product-nav">
                      <h2 className="product-nav-title">Фильмы</h2>
-                     <div className='product-nav-buttons' >
-                        <button
-                            className="button-prev-1 product-nav-buttons-left"
-                            onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
-                            >
-                            <img src={leftArrow} alt="" />
-                        </button>
-                        <button
-                            className="button-next-1 product-nav-buttons-right"
-                            onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
-                            >
-                            <img src={rightArrow} alt="" />
-                        </button>
-                     </div>
+                     <ProductNavButtons buttonClassLeft="button-prev-1" buttonClassRight="button-next-1"/>
                 </div>
                 <div className="product-wrapper">
                 <Swiper className='product-swiper'
@@ -151,21 +137,8 @@ const Product = () => {
                  </Swiper>
                 </div>
                     <div className="product-nav">
-                        <h2 className="product-nav-title">Фильмы</h2>
-                         <div className='product-nav-buttons' >
-                                <button
-                                    className="button-prev-2 product-nav-buttons-left"
-                                    onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
-                                    >
-                                    <img src={leftArrow} alt="" />
-                                </button>
-                                <button
-                                    className="button-next-2 product-nav-buttons-right"
-                                    onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
-                                    >
-                                    <img src={rightArrow} alt="" />
-                                </button>
-                         </div>
+                        <h2 className="product-nav-title">Книги</h2>
+                        <ProductNavButtons buttonClassLeft="button-prev-2" buttonClassRight="button-next-2"/>
                 </div>
                 <div className="product-wrapper">
                 <Swiper className='product-swiper'
@@ -228,36 +201,23 @@ const Product = () => {
                           },
                       }}
                     >
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽" /></SwiperSlide>
                  </Swiper>
                 </div>
                 <div className="product-nav">
-                     <h2 className="product-nav-title">Фильмы</h2>
-                     <div className='product-nav-buttons' >
-            <button
-                className="button-prev-3 product-nav-buttons-left"
-                onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
-                >
-                <img src={leftArrow} alt="" />
-            </button>
-            <button
-                className="button-next-3 product-nav-buttons-right"
-                onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
-                >
-                <img src={rightArrow} alt="" />
-            </button>
-             </div>
+                     <h2 className="product-nav-title">Игры</h2>
+                     <ProductNavButtons buttonClassLeft="button-prev-3" buttonClassRight="button-next-3"/>
                 </div>
                 <div className="product-wrapper">
                 <Swiper className='product-swiper'
@@ -320,42 +280,20 @@ const Product = () => {
                           },
                       }}
                     >
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
-                    <SwiperSlide> <ProductItem cardImg={yaPlus} cardTitle="Яндекс плюс на год" cardDesc="Персональная подписка Яндекс плюс" cardCost="2820 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
+                    <SwiperSlide> <ProductItem cardImg={game} cardTitle="Spider-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽" /></SwiperSlide>
                  </Swiper>
                 </div>
-                {/* <div className="product-nav">
-                     <h2 className="product-nav-title">Электронные книги</h2>
-                </div>
-                <div className="product-wrapper">
-                    <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽"/>
-                    <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽"/>
-                    <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽"/>
-                    <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽"/>
-                    <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽"/>
-                    <ProductItem cardImg={book} cardTitle="Триумфальная арка" cardDesc="Эрих Мария Ремарк" cardCost="220 ₽"/>
-                </div>
-                <div className="product-nav">
-                     <h2 className="product-nav-title">Игры</h2>
-                </div>
-                <div className="product-wrapper">
-                    <ProductItem cardImg={game} cardTitle="Spier-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽"/>
-                    <ProductItem cardImg={game} cardTitle="Spier-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽"/>
-                    <ProductItem cardImg={game} cardTitle="Spier-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽"/>
-                    <ProductItem cardImg={game} cardTitle="Spier-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽"/>
-                    <ProductItem cardImg={game} cardTitle="Spier-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽"/>
-                    <ProductItem cardImg={game} cardTitle="Spier-man 2" cardDesc="Код активации от игры" cardCost="5200 ₽"/>
-                </div> */}
             </div>
         </section>
     );
